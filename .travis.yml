@@ -17,7 +17,7 @@ script:
 - buildah run "$ctr1" -- apt-get install -y clamav git ssh smbclient zip
 - buildah run "$ctr1" -- freshclam
 - buildah commit "$ctr1" "css123001/dockscreen"
-- buildah push css123001/dockscreen docker://docker.io/css123001css123001/dockscreen:latest
+- buildah push css123001/dockscreen docker://docker.io/css123001/dockscreen:latest
 
 env:
   global:
